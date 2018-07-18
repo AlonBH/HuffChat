@@ -47,7 +47,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html',
       filename: 'index.html',
-      favicon: './client/assests/fav.ico',
       inject: 'body'
     }),
     new HotModuleReplacementPlugin(),

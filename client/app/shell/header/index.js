@@ -4,8 +4,6 @@ import {withStyles} from 'material-ui/styles';
 import {Flex} from 'reflexbox';
 import {compose} from 'recompose';
 
-import appIcon from '../../../assests/app-icon.png';
-
 const ToolBarStyle = theme => ({
   toolBar: {
     position: 'sticky',
@@ -17,10 +15,6 @@ const ToolBarStyle = theme => ({
   },
   titleContainer: {
     marginLeft: '5%'
-  },
-  appIcon: {
-    height: '64px',
-    width: '64px'
   }
 });
 
@@ -29,9 +23,6 @@ export default compose(
 )(({classes}) => (
   <AppBar className={classes.toolBar}>
     <Flex className={classes.titleContainer} align='center'>
-      <Flex auto>
-        <img src={appIcon} className={classes.appIcon} />
-      </Flex>
     </Flex>
   </AppBar>
 ));
