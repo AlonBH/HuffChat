@@ -2,6 +2,7 @@ import express from 'express';
 import { load } from 'dotenv-extended';
 import { json, urlencoded } from 'body-parser';
 
+import db from './db';
 import api from './api';
 
 console.log('Server is loading...');

@@ -58,6 +58,7 @@
     "dotenv-extended": "^2.0.1",
     "express": "^4.16.2",
     "express-async-router": "^0.1.12",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "mongoose": "^5.2.4"
   }
 }
