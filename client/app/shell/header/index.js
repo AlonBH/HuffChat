@@ -3,35 +3,27 @@ import AppBar from 'material-ui/AppBar';
 import {withStyles} from 'material-ui/styles';
 import {Flex} from 'reflexbox';
 import {compose} from 'recompose';
-
-import appIcon from '../../../assests/app-icon.png';
+import Typography from 'material-ui/es/Typography/Typography';
 
 const ToolBarStyle = theme => ({
   toolBar: {
-    position: 'sticky',
-    zIndex: 5,
-    background: theme.palette.primary[500],
-    color: 'rgba(255,255,255,.87)',
-    height: '54px',
-    borderRadios: '0 !important'
+    justifyContent: 'center',
+    background: theme.palette.primary,
+    height: '55px'
   },
   titleContainer: {
-    marginLeft: '5%'
-  },
-  appIcon: {
-    height: '64px',
-    width: '64px'
+    marginLeft: '3em'
   }
 });
 
 export default compose(
   withStyles(ToolBarStyle)
 )(({classes}) => (
-  <AppBar className={classes.toolBar}>
+  <AppBar className={classes.toolBar} position={'static'}>
     <Flex className={classes.titleContainer} align='center'>
-      <Flex auto>
-        <img src={appIcon} className={classes.appIcon} />
-      </Flex>
+      <Typography variant='title' color='inherit' className='title'>
+        {'pAtrol'}
+      </Typography>
     </Flex>
   </AppBar>
 ));

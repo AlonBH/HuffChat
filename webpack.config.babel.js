@@ -1,6 +1,6 @@
 import {join} from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import webpack, {HotModuleReplacementPlugin, NamedModulesPlugin} from 'webpack';
+import {HotModuleReplacementPlugin, NamedModulesPlugin} from 'webpack';
 
 const clientPort = 8080;
 
@@ -47,7 +47,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html',
       filename: 'index.html',
-      favicon: './client/assests/fav.ico',
+      favicon: './client/assets/favicon.png',
       inject: 'body'
     }),
     new HotModuleReplacementPlugin(),
