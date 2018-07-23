@@ -5,14 +5,22 @@ import {Flex} from 'reflexbox';
 import {compose} from 'recompose';
 import Typography from 'material-ui/es/Typography/Typography';
 
+import appIcon from '../../../assets/logo.png';
+
 const ToolBarStyle = theme => ({
   toolBar: {
     justifyContent: 'center',
     background: theme.palette.primary,
-    height: '55px'
+    height: '60px'
   },
   titleContainer: {
-    marginLeft: '3em'
+    marginLeft: '1.5em'
+  },
+  appIcon: {
+    height: '55px'
+  },
+  title: {
+    marginLeft: '0.3em'
   }
 });
 
@@ -21,7 +29,8 @@ export default compose(
 )(({classes}) => (
   <AppBar className={classes.toolBar} position={'static'}>
     <Flex className={classes.titleContainer} align='center'>
-      <Typography variant='title' color='inherit' className='title'>
+      <img src={appIcon} className={classes.appIcon}/>
+      <Typography variant='title' color='inherit' className={classes.title}>
         {'pAtrol'}
       </Typography>
     </Flex>
