@@ -1,5 +1,5 @@
 import React from 'react';
-import {withStyles} from 'material-ui/styles';
+import {withStyles} from '@material-ui/core';
 import {compose} from 'recompose';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';

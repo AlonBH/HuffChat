@@ -1,6 +1,6 @@
 import React from 'react';
-import { withStyles } from 'material-ui/styles';
-import { compose } from 'recompose';
+import {withStyles} from '@material-ui/core';
+import {compose} from 'recompose';
 
 const styles = theme => ({
   footer: {
@@ -12,8 +12,8 @@ const styles = theme => ({
 
 export default compose(
   withStyles(styles)
-)(({ classes }) => (
-  <footer className={classes.footer}>
+)(({classes: {footer}}) => (
+  <footer className={footer}>
     <span>footer</span>
   </footer>
 ));

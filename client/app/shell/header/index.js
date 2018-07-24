@@ -1,9 +1,7 @@
 import React from 'react';
-import AppBar from 'material-ui/AppBar';
-import {withStyles} from 'material-ui/styles';
+import {AppBar, Typography, withStyles} from '@material-ui/core';
 import {Flex} from 'reflexbox';
 import {compose} from 'recompose';
-import Typography from 'material-ui/es/Typography/Typography';
 
 import appIcon from '../../../assets/logo.png';
 
